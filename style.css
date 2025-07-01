@@ -81,12 +81,21 @@ nav ul li a:hover {
 
 .content-home{
   display: flex;
-  margin-top: 5%;
+  margin-top: 3%;
   font-size: 30px;
+  align-items: center;
+  gap: 70px;
 }
 
 .text{
-  width: 55%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.text h1{
+  margin-bottom: -10px;
 }
 
 .social-links img{
@@ -108,14 +117,27 @@ nav ul li a:hover {
 
 .typing-text-heading{
   font-size: 26px;
-  
+
   
 }
 
 .descibtion{
-  font-size: 20px;
+  font-size: 16px;
+  margin-bottom: 0;
  
   
+}
+
+.cv-btn button{
+  padding: 10px 10px;
+  background-color: #000000;
+  border: 1px solid #fffbfb;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.cv-btn{
+  margin-top: 20px;
 }
 
 .my-pic img{
@@ -123,5 +145,7 @@ nav ul li a:hover {
   height: 360px;
   border-radius: 50%;
   object-fit: cover;
+  border: 1px solid #cc91e7;
+  
   
 }
