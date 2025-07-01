@@ -1,5 +1,8 @@
 *{
   font-family: "Montserrat", sans-serif;
+  color: #fffbfb;
+  
+  
 }
 
 body{
@@ -21,7 +24,7 @@ body{
 }
 
 .logo span {
-  color: #6049ea;
+  color: #e7a991;
   font-size: 22px;
   
 }
@@ -59,6 +62,66 @@ nav ul li a:hover {
 .navbar a.active{
   color: #fffbfb;
   
+}
+
+.cursor{
+  animation: blinker 1s linear infinite;
+  
+  
+}
+
+
+@keyframes blinker{
+  50% {
+    opacity: 0;
+  }
+
 
 }
 
+.content-home{
+  display: flex;
+  margin-top: 5%;
+  font-size: 30px;
+}
+
+.text{
+  width: 55%;
+}
+
+.social-links img{
+  width: 24px;
+  height: 24px;
+ 
+  border-radius: 50%;
+  background-color: #000000;
+  border: 1px solid #fffbfb;
+  padding: 5px 5px;
+  
+}
+
+.social-links{
+  gap: 15px;
+  display: flex;
+  margin-top: 10%;
+}
+
+.typing-text-heading{
+  font-size: 26px;
+  
+  
+}
+
+.descibtion{
+  font-size: 20px;
+ 
+  
+}
+
+.my-pic img{
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
