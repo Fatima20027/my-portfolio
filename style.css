@@ -85,12 +85,14 @@ nav ul li a:hover {
   font-size: 30px;
   align-items: center;
   gap: 70px;
+  
 }
 
 .text{
   width: 50%;
   display: flex;
   flex-direction: column;
+  max-width: 600px;
  
 }
 
@@ -98,21 +100,27 @@ nav ul li a:hover {
   margin-bottom: -10px;
 }
 
-.social-links img{
+.social-links i{
   width: 24px;
   height: 24px;
  
   border-radius: 50%;
   background-color: #000000;
-  border: 1px solid #fffbfb;
-  padding: 5px 5px;
+  
+
+  
+  
+  
+  
+
   
 }
 
 .social-links{
-  gap: 15px;
+  gap: 20px;
   display: flex;
   margin-top: 10%;
+  
 }
 
 .typing-text-heading{
@@ -140,12 +148,51 @@ nav ul li a:hover {
   margin-top: 20px;
 }
 
+
+@property --angle{
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
 .my-pic img{
   width: 360px;
   height: 360px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #cc91e7;
   
+  position: relative;
+
+}
+
+
+
+.my-pic::after, .my-pic::before{
+  content: '';
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background-image: conic-gradient( #f8b8f8, #f1b1fa, #bfbbfd, #bbdffd, #fdd1b8, #c1fcb0, #f8b8f8);
+  border-radius: 50%;
+  right: 238px;
+  bottom: 97px;
+  z-index: -1;
+  padding: 10px;
+  animation: spin 5s linear infinite;
   
+
+}
+
+.my-pic::before{
+  filter: blur(1rem);
+  
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }

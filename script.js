@@ -56,18 +56,18 @@ typeEffect();
 const socials = [
   {
     platform: "GitHub",
-    icon: "github",
+    icon: "bxl-github",
     url: "https://github.com/Fatima20027"
   },
   {
     platform: "Twitter",
-    icon: "x",
+    icon: "bxl-twitter",
     url: "https://x.com/FatimaHailou", 
   },
   {
-    platform: "Instagram",
-    icon: "instagram",
-    url: "https://www.instagram.com/fatima027___/",
+    platform: "Linkedin",
+    icon: "bxl-linkedin",
+    url: "https://www.linkedin.com/in/fatima-hailou-985779277/",
   },
 ];
 
@@ -82,9 +82,8 @@ socials.forEach(link => {
     a.title = link.platform;
     a.className = 'social-link';
 
-    const icon = document.createElement('img');
-    icon.src = `https://cdn.simpleicons.org/${link.icon}/white`;
-    icon.alt = `${link.platform}`;
+    const icon = document.createElement('i');
+    icon.className = `bx ${link.icon}`;
 
     a.appendChild(icon);
     socialLinksContainer.appendChild(a);
