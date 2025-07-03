@@ -198,18 +198,19 @@ nav ul li a:hover {
 .my-pic::after, .my-pic::before{
   content: '';
   position: absolute;
-  width: calc(150% + 16px);
-  height: calc(150% + 16px);
-  background-image: conic-gradient( transparent 50%, #98eee7, #c7f3a3, #faa3e4, #ffd6a5);
+  width: calc(150% + 10px);
+  height: calc(150% + 10px);
+  background-image: conic-gradient(  transparent 50%,  #ffd6a5, #faa3b6, #a5eaff, #ffd6a5);
   border-radius: 50%;
-  left: -8px;
-  top: -8px;
+  left: -5px;
+  top: -5px;
   z-index: -1;
+  animation: spin 6s linear infinite;
   
 
   
   
-  animation: spin 6s linear infinite;
+  
   
 
 }
