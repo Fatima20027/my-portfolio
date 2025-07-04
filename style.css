@@ -13,7 +13,7 @@ body{
 .container {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding: 10px 10%;
 }
 
@@ -22,6 +22,8 @@ body{
   font-weight: bold;
   color: #fffbfb;
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .logo span {
@@ -30,14 +32,36 @@ body{
   
 }
 
-nav {
-  display: flex;
+nav i {
+  position: relative;
+  top: 15px;
+  right: 10px;
+  font-size: 22px;
 }
+
+nav {
+  z-index: 1000;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 20px;
+  display: flex;
+  border-radius: 40px;
+  backdrop-filter: blur(14px);
+  padding: 0 40px;
+  
+  
+  
+  
+
+}
+
+
 
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 0px 30px;
   
   
 }
@@ -49,6 +73,8 @@ nav ul li a {
   
   transition: 0.3s;
   font-weight: 500;
+  font-size: 16px;
+  
 }
 
 nav ul li a:hover {
@@ -56,14 +82,17 @@ nav ul li a:hover {
   
   
   
-  
 }
+
 
 
 .navbar a.active{
   color: #fffbfb;
   
+  
 }
+
+
 
 .cursor{
   animation: blinker 1s linear infinite;
@@ -102,8 +131,6 @@ nav ul li a:hover {
 }
 
 .social-links i{
-  
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,11 +175,50 @@ nav ul li a:hover {
 }
 
 .cv-btn button{
-  padding: 10px 10px;
+  padding: 10px 25px;
   background-color: #000000;
-  border: 1px solid #fffbfb;
+  border: 2px solid #fffbfb;
   border-radius: 20px;
   font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  
+  
+  
+}
+
+.cv-btn button::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  border-radius: 20px;
+  right: -2px;
+  top: -2px;
+  z-index: -1;
+  background-image: conic-gradient( from 140deg, #4766f4, #ffafd7, #4766f4);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.cv-btn button:hover::after{
+  opacity: 1;
+}
+
+.cv-btn button:hover{
+  display: block;
+  z-index: 1;
+ 
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.2);
+  
+  
+ /* filter: drop-shadow(0 0 5px #fffdef);
+  background-color: #fffdef;
+  /*background-image: linear-gradient(#ffc6a5,  #a5eaff, #ffc6a5);
+  color: #000000;*/
+
 }
 
 .cv-btn{
@@ -201,7 +267,7 @@ nav ul li a:hover {
   position: absolute;
   width: calc(150% + 10px);
   height: calc(150% + 10px);
-  background-image: conic-gradient(transparent 50%, #ffc6a5,  #a5eaff, #ffc6a5);
+  background-image: conic-gradient( #4766f4, #79c3ff, #ffafd7, #4766f4);
   border-radius: 50%;
   left: -5px;
   top: -5px;

@@ -8,6 +8,20 @@ navbar.forEach(link => {
   link.addEventListener('click', barFuntion)
 })
 
+// scroll
+const navScroll = document.querySelector('nav');
+window.addEventListener('scroll', function(){
+  if(window.scrollY > 100){
+    navScroll.classList.add('slidedown');
+    navScroll.style.backgroundColor = 'rgba(31, 31, 31, 0.4)';
+  }else{
+    navScroll.classList.remove('slidedown');
+    navScroll.style.backgroundColor = 'transparent';
+    
+  }
+})
+  
+
 
 // Textwriting effect
 
