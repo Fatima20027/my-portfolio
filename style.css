@@ -178,7 +178,7 @@ nav ul li a:hover {
   padding: 10px 25px;
   background-color: #000000;
   border: 2px solid #fffbfb;
-  border-radius: 20px;
+  border-radius: 40px;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
@@ -198,7 +198,7 @@ nav ul li a:hover {
   right: -2px;
   top: -2px;
   z-index: -1;
-  background-image: conic-gradient( from 140deg, #4766f4, #ffafd7, #4766f4);
+  background-image: conic-gradient( from 140deg, #6d51a5, #e4a7c5, #6d51a5);
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -208,7 +208,7 @@ nav ul li a:hover {
 }
 
 .cv-btn button:hover{
-  display: block;
+ 
   z-index: 1;
  
   box-shadow: 0 0 16px rgba(255, 255, 255, 0.2);
@@ -218,6 +218,8 @@ nav ul li a:hover {
   background-color: #fffdef;
   /*background-image: linear-gradient(#ffc6a5,  #a5eaff, #ffc6a5);
   color: #000000;*/
+  color: #000000;
+  font-weight: 600;
 
 }
 
@@ -267,7 +269,7 @@ nav ul li a:hover {
   position: absolute;
   width: calc(150% + 10px);
   height: calc(150% + 10px);
-  background-image: conic-gradient( #4766f4, #79c3ff, #ffafd7, #4766f4);
+  background-image: conic-gradient( #4766f4, #6ab9fa, #ffafd7, #4766f4);
   border-radius: 50%;
   left: -5px;
   top: -5px;
@@ -296,4 +298,39 @@ nav ul li a:hover {
   to {
     --angle: 360deg;
   }
+}
+
+.about{
+  
+  
+  align-items: center;
+}
+
+
+.about-contents{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 50px;
+  
+  
+  
+}
+
+.about-header{
+  text-align: center;
+}
+
+.about-pic img{
+  width: 400px;
+  border-radius: 5px;
+  
+
+}
+
+
+.about-card-el{
+  display: flex;
+  gap: 40px;
 }

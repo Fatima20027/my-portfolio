@@ -83,6 +83,11 @@ const socials = [
     icon: "bxl-linkedin",
     url: "https://www.linkedin.com/in/fatima-hailou-985779277/",
   },
+  {
+    platform: "Instagram",
+    icon: "bxl-instagram",
+    url: "https://www.instagram.com/fatima027___/", 
+  },
 ];
 
 const socialLinksContainer = document.querySelector('.social-links');
