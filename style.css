@@ -8,6 +8,7 @@
 body{
   background-color: #000000;
   max-width: 100rem;
+  max-height: 100rem;
 }
 
 .container {
@@ -98,6 +99,7 @@ nav ul li a:hover {
   animation: blinker 1s linear infinite;
   
   
+  
 }
 
 
@@ -109,12 +111,17 @@ nav ul li a:hover {
 
 }
 
+.page{
+  height: 100vh;
+}
+
 .content-home{
   display: flex;
-  margin-top: 3%;
-  font-size: 30px;
+  
+  font-size: 25px;
   align-items: center;
   gap: 70px;
+  
   
 }
 
@@ -128,6 +135,7 @@ nav ul li a:hover {
 
 .text h1{
   margin-bottom: -10px;
+  
 }
 
 .social-links i{
@@ -163,6 +171,10 @@ nav ul li a:hover {
 
 .typing-text-heading{
   font-size: 26px;
+  
+}
+
+#typing-text{
 
   
 }
@@ -211,7 +223,7 @@ nav ul li a:hover {
  
   z-index: 1;
  
-  box-shadow: 0 0 16px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 16px rgba(252, 244, 244, 0.2);
   
   
  /* filter: drop-shadow(0 0 5px #fffdef);
@@ -257,6 +269,7 @@ nav ul li a:hover {
   border-radius: 50%;
   
   
+  
 
 }
 
@@ -269,12 +282,13 @@ nav ul li a:hover {
   position: absolute;
   width: calc(150% + 10px);
   height: calc(150% + 10px);
-  background-image: conic-gradient( #4766f4, #6ab9fa, #ffafd7, #4766f4);
+  background-image: conic-gradient(  #088dfa, #f70b81, #e7a991, #088dfa);
   border-radius: 50%;
   left: -5px;
   top: -5px;
   z-index: -1;
   animation: spin 6s linear infinite;
+  
   
 
   
@@ -300,10 +314,12 @@ nav ul li a:hover {
   }
 }
 
+
+/*about*/
+
 .about{
-  
-  
   align-items: center;
+  font-size: 14px;
 }
 
 
@@ -320,10 +336,11 @@ nav ul li a:hover {
 
 .about-header{
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .about-pic img{
-  width: 400px;
+  width: 350px;
   border-radius: 5px;
   
 
@@ -333,4 +350,34 @@ nav ul li a:hover {
 .about-card-el{
   display: flex;
   gap: 40px;
+}
+
+.about-content{
+  margin-left: 5rem;
+}
+
+.info-grid{
+  display: flex;
+  gap: 40px;
+  line-height: 3rem;
+  font-size: 12px;
+}
+
+.info-grid i {
+  font-size: 1.1rem;
+  background-color: aliceblue;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.card i {
+  font-size: 1.1rem;
+  background-color: aliceblue;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+
 }
