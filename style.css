@@ -1,14 +1,20 @@
 *{
   font-family: "Montserrat", sans-serif;
-  color: #fffbfb;
+  
+ 
   
   
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body{
   background-color: #000000;
   max-width: 100rem;
   max-height: 100rem;
+  color: #fffbfb;
 }
 
 .container {
@@ -118,9 +124,13 @@ nav ul li a:hover {
 .content-home{
   display: flex;
   
-  font-size: 25px;
+  font-size: 28px;
   align-items: center;
   gap: 70px;
+  margin-top: -3%;
+  
+  
+
   
   
 }
@@ -130,6 +140,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   max-width: 600px;
+  
  
 }
 
@@ -149,8 +160,16 @@ nav ul li a:hover {
   color: #000000;
   font-size: 24px;
   transition: .6s;
+  outline: none !important;
 
   
+}
+
+.social-links a{
+  outline: none !important;
+  border: none;
+  text-decoration: none;
+
 }
 
 
@@ -167,6 +186,8 @@ nav ul li a:hover {
   justify-content: start; 
   margin-top: 50px;
   
+  
+  
 }
 
 .typing-text-heading{
@@ -174,10 +195,7 @@ nav ul li a:hover {
   
 }
 
-#typing-text{
 
-  
-}
 
 .descibtion{
   font-size: 16px;
@@ -187,6 +205,7 @@ nav ul li a:hover {
 }
 
 .cv-btn button{
+  
   padding: 10px 25px;
   background-color: #000000;
   border: 2px solid #fffbfb;
@@ -195,6 +214,7 @@ nav ul li a:hover {
   font-weight: 600;
   cursor: pointer;
   position: relative;
+  color: #fffbfb;
   
   
   
@@ -205,14 +225,13 @@ nav ul li a:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 2px;
+  padding: 4px;
   border-radius: 20px;
   right: -2px;
   top: -2px;
   z-index: -1;
-  background-image: conic-gradient( from 140deg, #6d51a5, #e4a7c5, #6d51a5);
   opacity: 0;
-  transition: opacity 1s ease;
+  transition:  0.8s ease-out;
 }
 
 .cv-btn button:hover::after{
@@ -220,6 +239,9 @@ nav ul li a:hover {
 }
 
 .cv-btn button:hover{
+  background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+  border: none;
+  
  
   z-index: 1;
  
@@ -229,9 +251,10 @@ nav ul li a:hover {
  /* filter: drop-shadow(0 0 5px #fffdef);
   background-color: #fffdef;
   /*background-image: linear-gradient(#ffc6a5,  #a5eaff, #ffc6a5);
-  color: #000000;*/
-  color: #000000;
+  */
+  
   font-weight: 600;
+  color: #000000;
 
 }
 
@@ -282,7 +305,7 @@ nav ul li a:hover {
   position: absolute;
   width: calc(150% + 10px);
   height: calc(150% + 10px);
-  background-image: conic-gradient(  #088dfa, #f70b81, #e7a991, #088dfa);
+  background-image: conic-gradient(  #58efec, #e85c90, #e7a991, #58efec);
   border-radius: 50%;
   left: -5px;
   top: -5px;
@@ -320,7 +343,11 @@ nav ul li a:hover {
 .about{
   align-items: center;
   font-size: 14px;
+  
 }
+
+
+
 
 
 .about-contents{
@@ -381,3 +408,118 @@ nav ul li a:hover {
   margin-right: 10px;
 
 }
+
+/*projects*/
+
+
+
+.projects-title{
+  text-align: center;
+  margin-bottom: 5rem;
+
+  
+}
+
+
+
+
+.projects .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.projects .box-container .box{
+  
+  
+  padding: 50px ;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.8s ease-out;
+  
+  
+
+}
+
+.box:nth-child(1) {
+  background: linear-gradient(to bottom, #e9b7ce, #d3f3f1);
+  
+}
+
+.box:nth-child(2) {
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+}
+
+.box:nth-child(3) {
+  background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+}
+
+.box:nth-child(4) {
+  background: linear-gradient(to bottom, #fddb92, #d1fdff);
+}
+
+.box:nth-child(5) {
+  background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+}
+
+.box:nth-child(6) {
+  background: linear-gradient(to bottom, #f9c58d, #f492f0);
+}
+
+
+.box:hover{
+  background: transparent;
+  color: #fffbfb;
+  border: 1px solid #fffbfb;
+}
+
+
+
+
+
+
+.projects .box-container .box .p-icon{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  gap: 20px;
+  font-size: 20px;
+  
+ 
+ 
+  
+}
+
+.projects .box-container .box h2{
+  
+  margin: 0;
+  font-size: 30px;
+}
+
+.projects .box-container .box .p-tools{
+  list-style: none;
+  display: flex;
+  
+  position: absolute;
+  bottom: 15px;
+  right: 25%;
+  font-size: 0.8rem;
+  margin: 0;
+  gap: 22px;
+  font-weight: 600;
+}
+
+.box{
+  color: #000000;
+}
+
